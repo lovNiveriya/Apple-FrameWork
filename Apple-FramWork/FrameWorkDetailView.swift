@@ -9,13 +9,14 @@ import SwiftUI
 
 struct FrameWorkDetailView: View {
     let frameWork: Framework
+    @Binding var isPresented: Bool
     var body: some View {
         VStack{
             
             HStack{
                 Spacer()
                 Button(action: {
-                    
+                    isPresented = false
                 }, label: {
                     Image(systemName: "xmark")
                         .foregroundColor(Color(.label))
@@ -42,5 +43,5 @@ struct FrameWorkDetailView: View {
 }
 
 #Preview {
-    FrameWorkDetailView(frameWork: MockData.sampleData)
+    FrameWorkDetailView(frameWork: MockData.sampleData, isPresented: .constant(false))
 }

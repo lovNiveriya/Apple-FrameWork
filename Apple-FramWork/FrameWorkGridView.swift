@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct FrameWorkGridView: View {
+    
+    @StateObject var viewModel = FrameworkGridViewModel()
+    
     let columbs: [GridItem] = [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())]
+    
     var body: some View {
         NavigationView{
             ScrollView{
                 LazyVGrid(columns: columbs){
-                    ForEach(MockData.frameworks){
-                        FrameTitleView(frameWork: $0)
+                    ForEach(MockData.frameworks){ framework in
+                        FrameTitleView(frameWork: framework)
+                            .onTapGesture {
+                                viewModel.selectedFramework = framework
+                            }
                     }
                 }
             }.navigationTitle("🍎 FrameWork" )
+                .sheet(isPresented: $viewModel.isPresented, content: {
+                    FrameWorkDetailView(frameWork: viewModel.selectedFramework ?? MockData.sampleData, 
+                                        isPresented: $viewModel.isPresented)
+                })
         }
     }
 }
