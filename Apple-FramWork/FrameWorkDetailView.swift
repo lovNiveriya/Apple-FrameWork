@@ -11,6 +11,19 @@ struct FrameWorkDetailView: View {
     let frameWork: Framework
     var body: some View {
         VStack{
+            
+            HStack{
+                Spacer()
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "xmark")
+                        .foregroundColor(Color(.label))
+                        .frame(width: 44, height: 44)
+                        .imageScale(.medium)
+                })
+            }.padding()
+            
             Spacer()
             
             FrameTitleView(frameWork: frameWork)
@@ -19,7 +32,6 @@ struct FrameWorkDetailView: View {
                 .padding()
             
             Spacer()
-            
             Button {
                 
             } label: {
