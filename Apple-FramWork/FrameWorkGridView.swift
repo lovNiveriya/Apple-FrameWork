@@ -10,12 +10,15 @@ import SwiftUI
 struct FrameWorkGridView: View {
     let columbs: [GridItem] = [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())]
     var body: some View {
-        LazyVGrid(columns: columbs){
-            ForEach(MockData.frameworks){
-                FrameTitleView(frameWork: $0)
-            }
-        }.padding()
-        
+        NavigationView{
+            ScrollView{
+                LazyVGrid(columns: columbs){
+                    ForEach(MockData.frameworks){
+                        FrameTitleView(frameWork: $0)
+                    }
+                }
+            }.navigationTitle("🍎 FrameWork" )
+        }
     }
 }
 
@@ -35,6 +38,6 @@ struct FrameTitleView: View {
                 .fontWeight(.semibold)
                 .scaledToFit()
                 .minimumScaleFactor(0.5)
-        }
+        }.padding()
     }
 }

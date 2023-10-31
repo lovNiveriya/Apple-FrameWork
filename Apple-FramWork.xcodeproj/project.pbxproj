@@ -15,6 +15,8 @@
 		9C883E482AF16A500055A89F /* Apple_FramWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E472AF16A500055A89F /* Apple_FramWorkUITestsLaunchTests.swift */; };
 		9C883E552AF16AB80055A89F /* FrameWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E542AF16AB70055A89F /* FrameWork.swift */; };
 		9C883E572AF1721F0055A89F /* FrameWorkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E562AF1721F0055A89F /* FrameWorkGridView.swift */; };
+		9C883E592AF17C4E0055A89F /* FrameWorkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E582AF17C4E0055A89F /* FrameWorkDetailView.swift */; };
+		9C883E5B2AF17E720055A89F /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E5A2AF17E720055A89F /* AFButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		9C883E472AF16A500055A89F /* Apple_FramWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FramWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9C883E542AF16AB70055A89F /* FrameWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWork.swift; sourceTree = "<group>"; };
 		9C883E562AF1721F0055A89F /* FrameWorkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkGridView.swift; sourceTree = "<group>"; };
+		9C883E582AF17C4E0055A89F /* FrameWorkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkDetailView.swift; sourceTree = "<group>"; };
+		9C883E5A2AF17E720055A89F /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				9C883E2A2AF16A4E0055A89F /* Apple_FramWorkApp.swift */,
 				9C883E542AF16AB70055A89F /* FrameWork.swift */,
 				9C883E562AF1721F0055A89F /* FrameWorkGridView.swift */,
+				9C883E582AF17C4E0055A89F /* FrameWorkDetailView.swift */,
+				9C883E5A2AF17E720055A89F /* AFButton.swift */,
 				9C883E2E2AF16A500055A89F /* Assets.xcassets */,
 				9C883E302AF16A500055A89F /* Preview Content */,
 			);
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C883E592AF17C4E0055A89F /* FrameWorkDetailView.swift in Sources */,
 				9C883E572AF1721F0055A89F /* FrameWorkGridView.swift in Sources */,
 				9C883E552AF16AB80055A89F /* FrameWork.swift in Sources */,
+				9C883E5B2AF17E720055A89F /* AFButton.swift in Sources */,
 				9C883E2B2AF16A4E0055A89F /* Apple_FramWorkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
