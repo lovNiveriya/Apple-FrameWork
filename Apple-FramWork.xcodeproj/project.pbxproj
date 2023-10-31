@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9C883E2B2AF16A4E0055A89F /* Apple_FramWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E2A2AF16A4E0055A89F /* Apple_FramWorkApp.swift */; };
-		9C883E2D2AF16A4E0055A89F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E2C2AF16A4E0055A89F /* ContentView.swift */; };
 		9C883E2F2AF16A500055A89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C883E2E2AF16A500055A89F /* Assets.xcassets */; };
 		9C883E322AF16A500055A89F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C883E312AF16A500055A89F /* Preview Assets.xcassets */; };
 		9C883E3C2AF16A500055A89F /* Apple_FramWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E3B2AF16A500055A89F /* Apple_FramWorkTests.swift */; };
 		9C883E462AF16A500055A89F /* Apple_FramWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E452AF16A500055A89F /* Apple_FramWorkUITests.swift */; };
 		9C883E482AF16A500055A89F /* Apple_FramWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E472AF16A500055A89F /* Apple_FramWorkUITestsLaunchTests.swift */; };
 		9C883E552AF16AB80055A89F /* FrameWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E542AF16AB70055A89F /* FrameWork.swift */; };
+		9C883E572AF1721F0055A89F /* FrameWorkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E562AF1721F0055A89F /* FrameWorkGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		9C883E272AF16A4E0055A89F /* Apple-FramWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-FramWork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C883E2A2AF16A4E0055A89F /* Apple_FramWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FramWorkApp.swift; sourceTree = "<group>"; };
-		9C883E2C2AF16A4E0055A89F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9C883E2E2AF16A500055A89F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C883E312AF16A500055A89F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C883E372AF16A500055A89F /* Apple-FramWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple-FramWorkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +45,7 @@
 		9C883E452AF16A500055A89F /* Apple_FramWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FramWorkUITests.swift; sourceTree = "<group>"; };
 		9C883E472AF16A500055A89F /* Apple_FramWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FramWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9C883E542AF16AB70055A89F /* FrameWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWork.swift; sourceTree = "<group>"; };
+		9C883E562AF1721F0055A89F /* FrameWorkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				9C883E2A2AF16A4E0055A89F /* Apple_FramWorkApp.swift */,
-				9C883E2C2AF16A4E0055A89F /* ContentView.swift */,
 				9C883E542AF16AB70055A89F /* FrameWork.swift */,
+				9C883E562AF1721F0055A89F /* FrameWorkGridView.swift */,
 				9C883E2E2AF16A500055A89F /* Assets.xcassets */,
 				9C883E302AF16A500055A89F /* Preview Content */,
 			);
@@ -260,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C883E572AF1721F0055A89F /* FrameWorkGridView.swift in Sources */,
 				9C883E552AF16AB80055A89F /* FrameWork.swift in Sources */,
-				9C883E2D2AF16A4E0055A89F /* ContentView.swift in Sources */,
 				9C883E2B2AF16A4E0055A89F /* Apple_FramWorkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
