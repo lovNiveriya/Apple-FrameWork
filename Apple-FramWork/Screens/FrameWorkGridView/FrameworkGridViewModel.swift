@@ -17,5 +17,8 @@ final class FrameworkGridViewModel: ObservableObject{
     }
     
     @Published var isPresented = false
+    let columbs: [GridItem] = [GridItem(.flexible()),
+                               GridItem(.flexible()),
+                               GridItem(.flexible())]
     
 }

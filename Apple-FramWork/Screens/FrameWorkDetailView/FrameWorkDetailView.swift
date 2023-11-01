@@ -30,7 +30,7 @@ struct FrameWorkDetailView: View {
             
             Spacer()
             
-            FrameTitleView(frameWork: frameWork)
+            FrameWorkTitleView(frameWork: frameWork)
             Text(frameWork.description)
                 .font(.body)
                 .padding()
