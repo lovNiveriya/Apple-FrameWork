@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct FrameWorkDetailView: View {
+    
     let frameWork: Framework
     @Binding var isPresented: Bool
+    @State private var isShowingSafariView = false
+    
     var body: some View {
         VStack{
             
@@ -34,11 +37,15 @@ struct FrameWorkDetailView: View {
             
             Spacer()
             Button {
-                
+                isShowingSafariView = true
             } label: {
                 AFButton(title: "Lear More")
             }
-        }
+        }.sheet(isPresented: $isShowingSafariView, content: {
+            if let url = URL(string: frameWork.urlString){
+                SafariView(url: url)
+            }
+        })
     }
 }
 

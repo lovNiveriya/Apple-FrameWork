@@ -18,6 +18,7 @@
 		9C883E592AF17C4E0055A89F /* FrameWorkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E582AF17C4E0055A89F /* FrameWorkDetailView.swift */; };
 		9C883E5B2AF17E720055A89F /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E5A2AF17E720055A89F /* AFButton.swift */; };
 		9C883E5D2AF182930055A89F /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E5C2AF182920055A89F /* FrameworkGridViewModel.swift */; };
+		9C883E5F2AF2B1870055A89F /* SafariViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C883E5E2AF2B1870055A89F /* SafariViewcontroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9C883E582AF17C4E0055A89F /* FrameWorkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkDetailView.swift; sourceTree = "<group>"; };
 		9C883E5A2AF17E720055A89F /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		9C883E5C2AF182920055A89F /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		9C883E5E2AF2B1870055A89F /* SafariViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewcontroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				9C883E562AF1721F0055A89F /* FrameWorkGridView.swift */,
 				9C883E5C2AF182920055A89F /* FrameworkGridViewModel.swift */,
 				9C883E582AF17C4E0055A89F /* FrameWorkDetailView.swift */,
+				9C883E5E2AF2B1870055A89F /* SafariViewcontroller.swift */,
 				9C883E5A2AF17E720055A89F /* AFButton.swift */,
 				9C883E2E2AF16A500055A89F /* Assets.xcassets */,
 				9C883E302AF16A500055A89F /* Preview Content */,
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C883E592AF17C4E0055A89F /* FrameWorkDetailView.swift in Sources */,
+				9C883E5F2AF2B1870055A89F /* SafariViewcontroller.swift in Sources */,
 				9C883E572AF1721F0055A89F /* FrameWorkGridView.swift in Sources */,
 				9C883E552AF16AB80055A89F /* FrameWork.swift in Sources */,
 				9C883E5B2AF17E720055A89F /* AFButton.swift in Sources */,
