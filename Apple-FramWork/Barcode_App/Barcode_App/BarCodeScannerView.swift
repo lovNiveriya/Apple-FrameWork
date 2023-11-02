@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BarCodeScannerView: View {
     @State private var scannedString = ""
+    @StateObject var viewModel = BarcodeScannerViewModel()
     var body: some View {
         NavigationStack{
             ZStack{
@@ -20,7 +21,7 @@ struct BarCodeScannerView: View {
                         Spacer()
                     }.padding()
                     Spacer().frame(height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    ScannerView(scannedCode: $scannedString)
+                    ScannerView(scannedCode: $scannedString, alertItem: $viewModel.alertItem)
                         .frame(width: UIScreen.main.bounds.width, height: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     VStack{
                         Label("Scanned Barcode", systemImage: "barcode.viewfinder")
@@ -32,6 +33,10 @@ struct BarCodeScannerView: View {
                     }.padding()
                     Spacer()
                 }
+            }.alert(item: $viewModel.alertItem) { alertItem in
+                Alert(title: Text(alertItem.title),
+                      message: Text(alertItem.message),
+                      dismissButton: alertItem.dismissButton)
             }
         }
     }
