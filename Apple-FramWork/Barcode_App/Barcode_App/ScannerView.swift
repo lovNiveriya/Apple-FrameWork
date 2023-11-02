@@ -1,8 +1,8 @@
 //
 //  ScannerView.swift
-//  BarcodeScanner
+//  Barcode_App
 //
-//  Created by Sean Allen on 11/5/20.
+//  Created by LOVE  on 02/11/23.
 //
 
 import SwiftUI
@@ -10,7 +10,8 @@ import SwiftUI
 struct ScannerView: UIViewControllerRepresentable {
     
     @Binding var scannedCode: String
-    @Binding var alertItem: AlertItem?
+    
+    typealias UIViewControllerType = ScannerVC
     
     func makeUIViewController(context: Context) -> ScannerVC {
         ScannerVC(scannerDelegate: context.coordinator)
@@ -22,9 +23,10 @@ struct ScannerView: UIViewControllerRepresentable {
         Coordinator(scannerView: self)
     }
     
-    final class Coordinator: NSObject, ScannerVCDelegate {
+    
+    final class Coordinator: NSObject,ScannerVCDelegate{
         
-        private let scannerView: ScannerView
+        let scannerView: ScannerView
         
         init(scannerView: ScannerView) {
             self.scannerView = scannerView
@@ -35,12 +37,14 @@ struct ScannerView: UIViewControllerRepresentable {
         }
         
         func didSurface(error: CameraError) {
-            switch error {
-            case .invalidDeviceInput:
-                scannerView.alertItem = AlertContext.invalidDeviceInput
-            case .invalidScannedValue:
-                scannerView.alertItem = AlertContext.invalidScannedType
-            }
+            print(error)
         }
+        
     }
+    
+   
+}
+
+#Preview {
+    ScannerView(scannedCode: .constant("123456"))
 }
